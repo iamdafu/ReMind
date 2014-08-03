@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bug.remind">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <service android:name=".MyNotifyService"></service>
+        <receiver android:name=".ReMindBrdcstRcver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.bug.remind.AddEditGroupActivity"
+            android:label="@string/title_activity_add_edit_group" />
+        <activity
+            android:name="com.example.bug.remind.ViewGroupActivity"
+            android:label="@string/title_activity_view_group"></activity>
+        <activity
+            android:name="com.example.bug.remind.NoteViewEditActivity"
+            android:label="@string/title_activity_note_view_edit"></activity>
+    </application>
+
+</manifest>

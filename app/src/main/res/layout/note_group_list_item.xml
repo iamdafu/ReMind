@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|fill_horizontal|center_horizontal|fill"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/ng_list_item"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="900"
+        android:clickable="false"
+        android:enabled="true"
+        android:gravity="center|fill"
+        android:text="FGSFDS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorHighlight="#6fe0ff"
+        android:textStyle="bold"></TextView>
+</LinearLayout>
